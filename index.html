@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family: 'League Spartan', sans-serif;
+    }
+
+    body {
+        width: 100%;
+        margin: 0%;
+        /* padding: 5%; */
+    }
+
+    .container {
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5%;
+
+    }
+
+    .box-1
+     {
+        width: 40%;
+        padding:  2% 10% 0% 0%;
+        display:flex;
+        flex-direction: column;
+    }
+    .box-2 {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        padding: 4% 0% 0% 0%;
+        
+    }
+
+    .review {
+        width: 65% ;
+        border-radius: 5%;
+        background-color:hsl(300, 24%, 96%);
+        padding: 3% 4% 3% 4%;
+      /* font-size: 13px; */
+      display: flex;
+      align-items: center;
+      margin-bottom: 4%;
+    }
+
+    .container-2 {
+        display: flex;
+        padding: 5% 0% 0% 10%;
+        gap: 3%;
+    }
+    
+
+    img {
+        margin-right: 2%;
+        width:5%; 
+        /* height: 6%; */
+    }
+
+    .box4, .box4, .box4 {
+        /* width: 25%; */
+        border-radius: 4%;   
+        background: hsl(300, 43%, 22%);
+        padding: 9%;
+        
+    }
+
+    /* .box5 {
+        width: 25%;
+        border-radius: 4%;   
+        background: hsl(300, 43%, 22%);
+        padding: 2%;
+        margin: 2% 2% 0% 2%;
+    }
+
+    .box6 {
+        width: 25%;
+        border-radius: 4%;   
+        background: hsl(300, 43%, 22%);
+        padding: 2%;
+        margin: 2% 2% 0% 2%;
+    } */
+
+    .box4 img {
+        width:15%;
+        border-radius: 50%;
+        padding: 2%;
+    }
+
+    .para-align {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.1;
+    }
+
+    .align {
+        display: flex;
+        align-items: center;
+        margin: 0% 0% 9% 0%;
+    }
+
+    .fst, .scnd, .thrd {
+        width: 24%;
+    }
+
+    .main {
+        /* background-image: url("images/bg-pattern-top-desktop.svg"); 
+       background-repeat: no-repeat;  */
+       /* background-image: url("images/bg-pattern-bottom-desktop.svg");
+       background-size: 50%; */
+       width: 100%;
+       /* height: 50%; */
+       /* position: absolute;  */
+
+    }
+    
+
+    /* 2 ways */
+
+    /* 1 */
+    .main{
+        position: relative;
+    }
+    .main img.top , .main img.bottom{
+        width: 50%;
+        position: absolute;
+        margin: 0;
+    }
+
+    .main img.bottom{
+        bottom: 0;
+        right: 0;
+    }
+    .sub-main {
+        background-image: url("images/bg-pattern-bottom-desktop.svg"); 
+        width: 100%;
+    
+    }
+
+    @media(max-width: 700px) {
+        .container, .container-2 {
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            padding: 5% 0% 0% 0%;
+            margin: 0% 0% 0% 0%;
+            align-items: center;
+        }
+        .box-1, .box-2, .box4, .fst, .scnd, .thrd  {
+        
+            margin: 0% 0% 5% 0%;
+        }
+         
+    }
+
+    @media(max-width: 480px) {
+        .container, .container-2 {
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            padding: 5% 0% 0% 0%;
+            margin: 0% 2% 0% 4%;
+            align-items: center;
+            /* width: 94%; */
+            text-align: center;
+            
+
+        }
+        .box-1, .box-2, .box4, .fst, .scnd, .thrd  {
+            
+            margin: 0% 0% 0% 0%;
+             width: 98%;
+        }
+        .box-1 P:first-child{
+            font-size: 40px !important;
+        }
+        body {
+            font-size: 18px;
+        }
+
+     
+         
+    }
+
+
+
+
+
+</style>
+</head>
+<body>
+     <div class="main"> 
+         <!--  background  image top -->
+        
+        
+         <img class="top" src="./images/bg-pattern-top-desktop.svg" alt="" srcset="" > 
+       
+        <img class="bottom" src="./images/bg-pattern-bottom-desktop.svg" alt="" srcset="" >  
+
+        
+    <!-- <div class="sub-main">  -->
+        <!--  background  image bottom -->
+        <div class="container"> 
+            <div class="box-1">
+                <p style="color:hsl(300, 43%, 22%); font-size: 50px; font-weight: 700; margin-bottom: 2%; 
+                margin-right: 10%; letter-spacing: -1px; line-height: -1.0 ;">10,000+ of our users love our 
+                    product</p>
+                <p style="color:hsl(303, 10%, 53%); line-height: 1.5; font-weight: bold;">
+                    We only provide great products 
+                    combined with excellent customer 
+                    service. see whar our satisfied 
+                    customer are saying abour our 
+                    servises</p>
+
+               
+                </div>
+    
+    
+    
+            <div class="box-2">
+                <div class="review">
+                <img src="../social-proof-section-master/images/icon-star.svg">
+                <img src="../social-proof-section-master/images/icon-star.svg">
+                <img src="../social-proof-section-master/images/icon-star.svg">
+                <img src="../social-proof-section-master/images/icon-star.svg">
+                <img src="../social-proof-section-master/images/icon-star.svg">
+                <p style="color:hsl(300, 43%, 22%); font-weight: 700;margin-left:4% ; 
+                margin-bottom: 0%; font-size: 14px;">Rated 5 stars in Reviews</p>      
+            </div>
+          
+                <div class="review" style="margin-left: 10%;">
+                <img src="../social-proof-section-master/images/icon-star.svg">
+                <img src="../social-proof-section-master/images/icon-star.svg">
+                <img src="../social-proof-section-master/images/icon-star.svg">
+                <img src="../social-proof-section-master/images/icon-star.svg">
+                <img src="../social-proof-section-master/images/icon-star.svg">
+                <p style="color:hsl(300, 43%, 22%); font-weight: 700;margin-left:4% ; 
+                margin-bottom: 0%; font-size: 14px;">Rated 5 stars in Reviews</p>      
+            </div>
+           
+                <div class="review" style="margin-left: 20%;">
+                <img src="../social-proof-section-master/images/icon-star.svg">
+                <img src="../social-proof-section-master/images/icon-star.svg">
+                <img src="../social-proof-section-master/images/icon-star.svg">
+                <img src="../social-proof-section-master/images/icon-star.svg">
+                <img src="../social-proof-section-master/images/icon-star.svg">
+                <p style="color:hsl(300, 43%, 22%); font-weight: 700;margin-left:4% ; ;
+                margin-bottom: 0%; font-size: 14px;">Rated 5 stars in Reviews</p>      
+            </div>
+        </div>
+    
+        </div>
+        <div class="container-2">
+            <div class="fst">
+    
+            <div class="box4" style="margin: 0% 0% 0% 0%;">
+             <div class="align"> 
+                <img src="../social-proof-section-master/images/image-anne.jpg">
+                <div class="para-align" > 
+                <p style="color:white; font-size: 13px; line-height: 1.2;">Collen Gills</p> 
+                
+                <p style="color:hsl(333, 80%, 67%); font-weight: 100; font-size: 13px;">Verified byer </p>
+            </div>
+         </div>
+                <p style="color:white; line-height: 1.4; font-weight:100; font-size: 13px; ">
+                    "We needed the same printed design as the one we had ordered a week prior. 
+                    Not only did they find the original order, but we also received it in time" </p>
+            </div>
+           </div>
+    
+            <div class="scnd">
+            <div class="box4" style="margin: 5% 0% 0% 0%">
+                <div class="align"> 
+                    <img src="../social-proof-section-master/images/image-anne.jpg">
+                    <div class="para-align" > 
+                    <p style="color:white; font-size: 13px; line-height: 1.2;">Collen Gills</p> 
+                    
+                    <p style="color:hsl(333, 80%, 67%); font-weight: 100; font-size: 13px;">Verified byer </p>
+                </div>
+             </div>
+                    <p style="color:white; line-height:1.4; font-weight:100; font-size: 13px;"> "We needed the same 
+                        printed design as the one we had ordered a week prior. Not only did they find the original order, 
+                        but we also received it in time." </p>
+                </div>
+            </div>
+            <div class="thrd">
+                <div class="box4" style="margin: 11% 0% 0% 0%">
+                    <div class="align"> 
+                        <img src="../social-proof-section-master/images/image-anne.jpg">
+                        <div class="para-align" > 
+                        <p style="color:white; font-size: 13px; line-height: 1.2;">Collen Gills</p> 
+                        
+                        <p style="color:hsl(333, 80%, 67%); font-weight: 100; font-size: 13px;">Verified byer </p>
+                    </div>
+                 </div>
+                        <p style="color:white; line-height:1.4; font-weight:100; font-size: 13px;"> "We needed the same 
+                            printed design as the one we had ordered a week prior. Not only did they find the original order, 
+                            but we also received it in time." </p>
+                    </div>
+                </div>
+    
+           
+        
+        </div>
+        
+    
+
+
+
+    
+</div>
+
+</div>
+</body>
+
+
+
+
+
+
+
+
